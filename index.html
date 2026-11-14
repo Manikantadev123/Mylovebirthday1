@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#ffe0eb">
+    <meta name="description" content="A special birthday surprise made with love for Malavika by Manikanta.">
+
+    <title>Happy Birthday Malavika ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background music -->
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-button" id="musicButton" aria-label="Play music">
+        🎵 Play Music
+    </button>
+
+    <!-- Floating hearts -->
+    <div id="heartContainer"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="top-heart">💗</div>
+
+            <p class="small-heading">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+
+            <h1>Happy Birthday</h1>
+
+            <h2 class="princess-name">Malavika</h2>
+
+            <div class="heart-divider">♡ ♥ ♡</div>
+
+            <p class="hero-message">
+                Today the world celebrates your birthday,
+                but I celebrate the beautiful blessing of having you in my life.
+            </p>
+
+            <div class="birthday-date">
+                November 17, 2026
+            </div>
+
+            <button class="main-button" onclick="openBirthdayMessage()">
+                Open Your Birthday Surprise 💌
+            </button>
+
+            <div class="scroll-indicator">
+                Scroll down for more love ↓
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+
+        <p class="small-heading">THE SPECIAL DAY IS HERE SOON</p>
+
+        <h2 class="section-heading">Counting Every Moment ❤️</h2>
+
+        <div class="countdown-container">
+
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+        </div>
+
+        <p class="countdown-note">
+            Every second brings another reason to celebrate you! 🌸
+        </p>
+
+    </section>
+
+
+    <!-- LOVE MESSAGE -->
+    <section class="love-section" id="loveMessage">
+
+        <div class="section-icon">💌</div>
+
+        <p class="small-heading">WORDS FROM MY HEART</p>
+
+        <h2 class="section-heading">To My Beautiful Malavika</h2>
+
+        <div class="love-card">
+
+            <p>My Dearest Malavika, ❤️</p>
+
+            <br>
+
+            <p>
+                First of all, a very, very happy birthday to you,
+                my beautiful princess!
+            </p>
+
+            <br>
+
+            <p>
+                I honestly don't know how to put all my feelings
+                into words, but today I want to tell you something
+                from the deepest corner of my heart.
+            </p>
+
+            <br>
+
+            <p>
+                You are not just a special person in my life.
+                You are the reason behind so many of my smiles,
+                the sweetest thought in my mind, and someone
+                whose happiness means more to me than words
+                can ever explain.
+            </p>
+
+            <br>
+
+            <p>
+                Your smile is my favourite view. Your happiness
+                is my favourite feeling. Even the smallest
+                moments become beautiful when they are connected
+                to you.
+            </p>
+
+            <br>
+
+            <p>
+                On your birthday, I wish you endless happiness,
+                good health, success, peace, and everything
+                your beautiful heart dreams of.
+            </p>
+
+            <br>
+
+            <p>
+                I wish I could make every wish of yours come true.
+                I may not be perfect, and I may not always find
+                the right words, but my feelings for you are
+                genuine and special.
+            </p>
+
+            <br>
+
+            <p>
+                May your life always be filled with beautiful
+                surprises, unforgettable memories, and countless
+                reasons to smile.
+            </p>
+
+            <br>
+
+            <p>
+                Thank you for being the wonderful person you are.
+                Never stop smiling, never stop dreaming, and
+                never forget how precious you are.
+            </p>
+
+            <br>
+
+            <p class="letter-ending">
+                Happy Birthday, my beautiful Malavika! ❤️
+                <br>
+                With all my love,
+                <br>
+                Yours, Manikanta 💗
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO MEMORIES -->
+    <section class="memories-section">
+
+        <p class="small-heading">LITTLE MOMENTS, BIG MEMORIES</p>
+
+        <h2 class="section-heading">Our Beautiful Memories 📸</h2>
+
+        <p class="section-description">
+            Every picture holds a memory, and every memory has a special place in my heart.
+        </p>
+
+        <div class="photo-gallery">
+
+            <div class="photo-card">
+                <img src="images/photo1.jpg" alt="Beautiful memory one">
+                <p>My favourite smile ❤️</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo2.jpg" alt="Beautiful memory two">
+                <p>A moment to remember 💕</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo3.jpg" alt="Beautiful memory three">
+                <p>Forever in my heart 🌸</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo4.jpg" alt="Beautiful memory four">
+                <p>My precious memories 💗</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REASONS -->
+    <section class="reasons-section">
+
+        <p class="small-heading">A LITTLE REMINDER</p>
+
+        <h2 class="section-heading">Reasons Why You're Special 💖</h2>
+
+        <div class="reasons-grid">
+
+            <div class="reason-card">
+                <span>😊</span>
+                <h3>Your Smile</h3>
+                <p>It can turn an ordinary day into something beautiful.</p>
+            </div>
+
+            <div class="reason-card">
+                <span>🌷</span>
+                <h3>Your Heart</h3>
+                <p>Your kindness makes you even more beautiful.</p>
+            </div>
+
+            <div class="reason-card">
+                <span>✨</span>
+                <h3>Your Presence</h3>
+                <p>You make even the simplest moments special.</p>
+            </div>
+
+            <div class="reason-card">
+                <span>💗</span>
+                <h3>Simply You</h3>
+                <p>There is no one else quite like you in this world.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAKE SECTION -->
+    <section class="cake-section">
+
+        <p class="small-heading">IT'S YOUR SPECIAL DAY</p>
+
+        <h2 class="section-heading">Make A Beautiful Wish 🎂</h2>
+
+        <p class="section-description">
+            Close your eyes, make a wish, and tap the cake!
+        </p>
+
+        <div class="cake" id="birthdayCake" onclick="blowCandles()">
+            🎂
+        </div>
+
+        <button class="main-button" onclick="blowCandles()">
+            Make A Wish ✨
+        </button>
+
+        <p id="cakeMessage" class="cake-message"></p>
+
+    </section>
+
+
+    <!-- SECRET LETTER -->
+    <section class="surprise-section">
+
+        <div class="section-icon">🎁</div>
+
+        <p class="small-heading">SOMETHING FROM MY HEART</p>
+
+        <h2 class="section-heading">One Last Surprise</h2>
+
+        <p class="section-description">
+            Malavika, there is one more thing I want you to know.
+        </p>
+
+        <button class="main-button" onclick="revealSecret()">
+            Unlock Your Secret Letter ❤️
+        </button>
+
+        <div class="secret-letter" id="secretLetter">
+
+            <h2>My Forever Wish 💗</h2>
+
+            <p>
+                Dear Malavika,
+            </p>
+
+            <br>
+
+            <p>
+                If I could give you one gift, I would give you the
+                ability to see yourself through my eyes.
+            </p>
+
+            <br>
+
+            <p>
+                Then you would understand how beautiful,
+                precious, and irreplaceable you are.
+            </p>
+
+            <br>
+
+            <p>
+                I don't know what the future has planned for us,
+                but I hope it brings us countless reasons to smile,
+                beautiful memories to cherish, and wonderful
+                moments to remember.
+            </p>
+
+            <br>
+
+            <p>
+                Whatever happens, I want you to know that you
+                deserve all the happiness in this world.
+            </p>
+
+            <br>
+
+            <h3>YOU ARE MY SPECIAL PERSON! ❤️</h3>
+
+            <br>
+
+            <p class="signature">
+                Forever with love,
+                <br>
+                Manikanta 💕
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL SECTION -->
+    <section class="final-section">
+
+        <div class="final-heart">❤️</div>
+
+        <h1>Happy Birthday, Malavika!</h1>
+
+        <h2>Keep Smiling, My Princess 👑</h2>
+
+        <p>
+            May your life be as beautiful as your smile
+            and as wonderful as your heart.
+        </p>
+
+        <div class="final-signature">
+            Made with endless love by Manikanta 💗
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 | A Little Birthday World Made Just For Malavika ❤️
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,495 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff5f8;
+    color: #71334c;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 85px 7%;
+    text-align: center;
+    position: relative;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(circle at 15% 20%, #fff 0, transparent 30%),
+        radial-gradient(circle at 85% 80%, #ffc4d8 0, transparent 35%),
+        linear-gradient(135deg, #ffe4ed, #ffd0e1, #fff0f5);
+}
+
+.hero-content {
+    max-width: 850px;
+    animation: fadeUp 1.5s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.top-heart {
+    font-size: 65px;
+    animation: heartbeat 1.5s infinite;
+    margin-bottom: 15px;
+}
+
+.small-heading {
+    color: #d34d80;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(55px, 10vw, 100px);
+    color: #d63376;
+    text-shadow: 2px 5px 15px #e76c9b35;
+}
+
+.princess-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(65px, 12vw, 115px);
+    color: #b81f5b;
+    margin-top: -5px;
+}
+
+.heart-divider {
+    color: #e34b82;
+    font-size: 28px;
+    margin: 15px;
+    letter-spacing: 10px;
+}
+
+.hero-message {
+    max-width: 600px;
+    margin: 15px auto;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.birthday-date {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 25px;
+    background: #ffffffaa;
+    border-radius: 30px;
+    color: #bf2867;
+    font-weight: 600;
+}
+
+.main-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #f45b91, #c72d70);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 35px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 8px 22px #d6337650;
+    transition: .3s;
+}
+
+.main-button:hover {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow: 0 12px 30px #d6337660;
+}
+
+.scroll-indicator {
+    margin-top: 45px;
+    font-size: 13px;
+    color: #a54c70;
+    animation: bounce 2s infinite;
+}
+
+.section-heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(35px, 6vw, 55px);
+    color: #ca3474;
+    margin-bottom: 25px;
+}
+
+.section-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.countdown-section {
+    background: #fff;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 35px 0;
+}
+
+.time-box {
+    width: 105px;
+    padding: 20px 10px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffe4ee, #fff0f5);
+    box-shadow: 0 5px 20px #e95e9020;
+}
+
+.time-box span {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ce3473;
+}
+
+.time-box small {
+    color: #93516c;
+    font-size: 13px;
+}
+
+.countdown-note {
+    font-size: 14px;
+}
+
+.love-section {
+    background: linear-gradient(180deg, #fff5f8, #ffe5ee);
+}
+
+.love-card {
+    max-width: 800px;
+    margin: 30px auto 0;
+    background: #ffffffd9;
+    padding: 45px;
+    border-radius: 25px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 2;
+    box-shadow: 0 10px 35px #c92f701a;
+    border: 1px solid #ffd0e1;
+}
+
+.letter-ending {
+    color: #bf2867;
+    font-family: 'Dancing Script', cursive;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.memories-section {
+    background: #fff;
+}
+
+.section-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.photo-gallery {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.photo-card {
+    background: white;
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #b62c671c;
+    transition: .4s;
+}
+
+.photo-card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.photo-card p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #c72d70;
+    padding: 15px 5px 8px;
+}
+
+.reasons-section {
+    background: linear-gradient(135deg, #ffe5ef, #fff1f6);
+}
+
+.reasons-grid {
+    max-width: 1000px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.reason-card {
+    background: #ffffffc9;
+    padding: 30px 20px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px #c72d7015;
+    transition: .3s;
+}
+
+.reason-card:hover {
+    transform: translateY(-6px);
+}
+
+.reason-card span {
+    font-size: 42px;
+}
+
+.reason-card h3 {
+    color: #c72d70;
+    margin: 12px 0;
+}
+
+.reason-card p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.cake-section {
+    background: white;
+}
+
+.cake {
+    font-size: 130px;
+    margin: 25px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .4s;
+    user-select: none;
+}
+
+.cake:hover {
+    transform: scale(1.15);
+}
+
+.cake-message {
+    color: #c72d70;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.surprise-section {
+    background: linear-gradient(135deg, #ffe5ef, #ffd0e2);
+}
+
+.secret-letter {
+    display: none;
+    max-width: 750px;
+    margin: 40px auto 0;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    line-height: 2;
+    font-size: 16px;
+    box-shadow: 0 10px 35px #a51d581e;
+    animation: fadeUp 1.2s ease;
+}
+
+.secret-letter h2,
+.secret-letter h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #c72d70;
+    font-size: 35px;
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #c72d70;
+}
+
+.final-section {
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fbc0d5, #ffe5ef, #f7bbd1);
+}
+
+.final-heart {
+    font-size: 75px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.final-section h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(45px, 8vw, 80px);
+    color: #c72d70;
+    margin: 15px;
+}
+
+.final-section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    margin: 10px;
+}
+
+.final-section p {
+    max-width: 600px;
+    line-height: 1.9;
+    margin: 15px;
+}
+
+.final-signature {
+    margin-top: 30px;
+    color: #a92a62;
+    font-weight: 600;
+}
+
+footer {
+    background: #b92764;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.music-button {
+    position: fixed;
+    z-index: 100;
+    top: 18px;
+    right: 18px;
+    border: none;
+    border-radius: 30px;
+    background: #c72d70;
+    color: white;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: 0 5px 15px #a51d5830;
+}
+
+#heartContainer {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.floating-heart {
+    position: absolute;
+    bottom: -40px;
+    animation: floatHeart linear forwards;
+    opacity: .8;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+    15% {
+        opacity: .9;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+}
+
+/* Mobile responsive design */
+
+@media(max-width: 650px) {
+
+    section {
+        padding: 65px 18px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .photo-card img {
+        height: 300px;
+    }
+
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .love-card {
+        padding: 25px 20px;
+        font-size: 14px;
+    }
+
+    .secret-letter {
+        padding: 25px 20px;
+        font-size: 14px;
+    }
+
+    .time-box {
+        width: 75px;
+        padding: 15px 5px;
+    }
+
+    .time-box span {
+        font-size: 24px;
+    }
+
+    .music-button {
+        top: 12px;
+        right: 10px;
+        font-size: 12px;
+    }
+
+    .hero-message {
+        font-size: 14px;
+    }
+}
